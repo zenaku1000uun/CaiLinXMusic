@@ -16,6 +16,6 @@ def ids(_, message):
         button = InlineKeyboardButton(" ᴄʟᴏsᴇ ", callback_data="close")
         markup = InlineKeyboardMarkup([[button]])
         message.reply(
-           f"""**ᴛʜɪs ᴄʜᴀᴛ's ɪᴅ ɪs: `{message.chat.id}`**""",
+           f"ᴛʜɪs ᴄʜᴀᴛ ɪᴅ ɪs: `{message.chat.id}`",
            reply_markup=markup
         )
