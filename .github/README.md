@@ -32,7 +32,7 @@
 
 </p>
 
-**𝙏𝙀𝙎𝙏 𝘽𝙊𝙏 ➣ [˹𝐁ʀᴀɴᴅᴇᴅ ꭙ 𝐂ʀᴇᴡ ꭙ 𝐌ᴜꜱɪᴄ™ ˹ʙꜱ](https://t.me/CrewMusic_bot)**
+**𝙏𝙀𝙎𝙏 𝘽𝙊𝙏 ➣ [˹ ꜱᴀꜱᴜᴋᴇ ꭙ ᴍᴜꜱɪᴄ ˼ ♪](https://t.me/sasukevipmusicbot)**
 
 
 
