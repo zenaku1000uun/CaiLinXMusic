@@ -32,7 +32,6 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
-    if 0 < math.floor(percentage)
     if 0 < umm <= 10:
         bar = "◉—————————"
     elif 10 < umm < 20:
@@ -100,6 +99,7 @@ def stream_markup(_, videoid, chat_id):
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
+
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/BRANDEDKING8"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/myqueenmedusa"
             ),
             InlineKeyboardButton(
-                text=" ᴄʜᴀᴛ ", url=f"https://t.me/BRANDED_WORLD"
+                text=" ᴄʜᴀᴛ ", url=f"https://t.me/seriousvs_version10"
             ),
         ],
 
@@ -545,4 +545,3 @@ def panel_markup_clone(_, vidid, chat_id):
     ]
 
     return buttons
-
