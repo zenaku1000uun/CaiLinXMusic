@@ -32,26 +32,27 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
     duration_sec = time_to_seconds(dur)
     percentage = (played_sec / duration_sec) * 100
     umm = math.floor(percentage)
+    if 0 < math.floor(percentage)
     if 0 < umm <= 10:
-        bar = "❥—————————"
+        bar = "◉—————————"
     elif 10 < umm < 20:
-        bar = "—❥————————"
+        bar = "—◉————————"
     elif 20 <= umm < 30:
-        bar = "——❥———————"
+        bar = "——◉———————"
     elif 30 <= umm < 40:
-        bar = "———❥——————"
+        bar = "———◉——————"
     elif 40 <= umm < 50:
-        bar = "————❥—————"
+        bar = "————◉—————"
     elif 50 <= umm < 60:
-        bar = "—————❥————"
+        bar = "—————◉————"
     elif 60 <= umm < 70:
-        bar = "——————❥———"
+        bar = "——————◉———"
     elif 70 <= umm < 80:
-        bar = "———————❥——"
+        bar = "———————◉——"
     elif 80 <= umm < 95:
-        bar = "————————❥—"
+        bar = "————————◉—"
     else:
-        bar = "—————————❥"
+        bar = "—————————◉"
     buttons = [
          [
             InlineKeyboardButton(
@@ -68,10 +69,10 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/myqueenmedusaofficial"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text=" ᴄʜᴀᴛ ", url=f"https://t.me/seriousvs_version10"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -90,16 +91,15 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/myqueenmedusaofficial"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text=" ᴄʜᴀᴛ ", url=f"https://t.me/seriousvs_version10"
             ),
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
-
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
@@ -219,7 +219,7 @@ def queue_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="⛦ ᴍᴏʀᴇ ❥",
+                text=" ᴍᴏʀᴇ ",
                 callback_data=f"PanelMarkup None|{chat_id}",
             ),
         ],
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
 [
             InlineKeyboardButton(
-                text="⛦ ᴏᴡɴᴇʀ ❥", url=f"https://t.me/BRANDEDKING8"
+                text=" ᴏᴡɴᴇʀ ", url=f"https://t.me/BRANDEDKING8"
             ),
             InlineKeyboardButton(
-                text="⛦ ᴄʜᴀᴛ ❥", url=f"https://t.me/BRANDED_WORLD"
+                text=" ᴄʜᴀᴛ ", url=f"https://t.me/BRANDED_WORLD"
             ),
         ],
 
@@ -329,11 +329,11 @@ def panel_markup_1(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❥ ʜᴏᴍᴇ ❥",
+                text=" ʜᴏᴍᴇ ",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="❥ ɴᴇxᴛ ❥",
+                text=" ɴᴇxᴛ ",
                 callback_data=f"Pages Forw|2|{videoid}|{chat_id}",
             ),
         ],
@@ -375,7 +375,7 @@ def panel_markup_2(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❥ ʙᴀᴄᴋ ❥",
+                text=" ʙᴀᴄᴋ ",
                 callback_data=f"Pages Back|1|{videoid}|{chat_id}",
             ),
         ],
@@ -406,11 +406,11 @@ def panel_markup_5(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❥ ʜᴏᴍᴇ ❥",
+                text=" ʜᴏᴍᴇ ",
                 callback_data=f"MainMarkup {videoid}|{chat_id}",
             ),
             InlineKeyboardButton(
-                text="❥ ɴᴇxᴛ ❥",
+                text=" ɴᴇxᴛ ",
                 callback_data=f"Pages Forw|1|{videoid}|{chat_id}",
             ),
         ],
@@ -446,7 +446,7 @@ def panel_markup_3(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="❥ ʙᴀᴄᴋ ❥",
+                text=" ʙᴀᴄᴋ ",
                 callback_data=f"Pages Back|2|{videoid}|{chat_id}",
             ),
         ],
@@ -505,7 +505,7 @@ def panel_markup_4(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="❥ ʜᴏᴍᴇ ❥",
+                text=" ʜᴏᴍᴇ ",
                 callback_data=f"MainMarkup {vidid}|{chat_id}",
             ),
         ],
