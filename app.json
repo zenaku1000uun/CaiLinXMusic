@@ -52,6 +52,11 @@
         "value": "",
         "required": false
       },
+      "TOKEN_ALLOW": {
+        "description": "Fill 'True' if you want to use Token data for play youtube songs, Fill 'False' to use cookies (song will play by cookies)",
+        "value": "False",
+        "required": false
+      },
       "AUTO_GCAST": {
         "description": "𝐅𝐈𝐋𝐋 𝐇𝐄𝐑𝐄:- [On/Off] 𝐅𝐎𝐑 On/Off 𝐀𝐔𝐓𝐎 𝐆𝐂𝐀𝐒𝐓/𝐁𝐑𝐎𝐀𝐃𝐂𝐀𝐒𝐓 𝐌𝐄𝐒𝐒𝐀𝐆𝐄.",
         "value": "on",
