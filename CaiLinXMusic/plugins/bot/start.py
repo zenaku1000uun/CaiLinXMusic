@@ -1,3 +1,4 @@
+import asyncio
 import time
 
 from pyrogram import filters
@@ -23,18 +24,28 @@ from CaiLinXMusic.utils.formatters import get_readable_time
 from CaiLinXMusic.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
+import random
+
+STICKERS = [
+    "CAACAgUAAxkBAAMIZ7LSt36VuQOXV5_m8DqTL01arw0AAtoSAAIpBZFV9KobuNL-kRA2BA",
+    "CAACAgUAAxkBAAMHZ7LSe9IWJGoKU8soLuUfSy5xqR0AAl4WAAINiZBVmtiphi4LHW42BA",
+    "CAACAgUAAxkBAAMJZ7LS9RsSUHIOzOqsRgUFk9hHSv4AArwWAAKfFpBVhnvDvVebyvM2BA",
+]
 
 
 @app.on_message(filters.command(["start"]) & filters.private & ~BANNED_USERS)
 @LanguageStart
 async def start_pm(client, message: Message, _):
+    random_sticker = random.choice(STICKERS)
     await add_served_user(message.from_user.id)
-    await message.react("🎃")
+    await message.react("😍")
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
             keyboard = help_pannel(_)
-            await message.reply_sticker("CAACAgUAAxkBAAMFZ448RGxjM8j2H36wdqeXeO1CajMAAo8SAAKb63BXikWOR4jz5Ys2BA")
+            MM = await message.reply_sticker(random_sticker)
+            await asyncio.sleep(3.5)
+            await MM.delete()
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -88,7 +99,9 @@ async def start_pm(client, message: Message, _):
     else:
         out = private_panel(_)
         UP, CPU, RAM, DISK = await bot_sys_stats()
-        await message.reply_sticker("CAACAgUAAxkBAAMFZ448RGxjM8j2H36wdqeXeO1CajMAAo8SAAKb63BXikWOR4jz5Ys2BA")
+        MM = await message.reply_sticker(random_sticker)
+        await asyncio.sleep(3.5)
+        await MM.delete()
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention, UP, DISK, CPU, RAM),
