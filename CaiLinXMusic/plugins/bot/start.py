@@ -44,7 +44,7 @@ async def start_pm(client, message: Message, _):
         if name[0:4] == "help":
             keyboard = help_pannel(_)
             MM = await message.reply_sticker(random_sticker)
-            await asyncio.sleep(3.5)
+            await asyncio.sleep(3)
             await MM.delete()
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
@@ -100,7 +100,7 @@ async def start_pm(client, message: Message, _):
         out = private_panel(_)
         UP, CPU, RAM, DISK = await bot_sys_stats()
         MM = await message.reply_sticker(random_sticker)
-        await asyncio.sleep(3.5)
+        await asyncio.sleep(3)
         await MM.delete()
         await message.reply_photo(
             photo=config.START_IMG_URL,
