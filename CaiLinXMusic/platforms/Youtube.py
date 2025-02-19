@@ -353,18 +353,27 @@ class YouTubeAPI:
             fpath = f"downloads/{title}.%(ext)s"
             ydl_optssx = {
                 "format": format_id,
+                "outtmpl": f"{download_dir}/%(title)s.%(ext)s",
                 "outtmpl": fpath,
                 "geo_bypass": True,
                 "nocheckcertificate": True,
+                "ignoreerrors": True,
+                "geo_bypass": True,
+                "force_keyframes_at_cuts": True,
+                "nocontinue": True,
+                "addmetadata": True,
                 "quiet": True,
+                "embedthumbnail": True,
                 "no_warnings": True,
+                "xattrs": True,
+                "merge_output_format": "mp3",
                 "cookiefile" : cookie_txt_file(),
                 "prefer_ffmpeg": True,
                 "postprocessors": [
                     {
                         "key": "FFmpegExtractAudio",
                         "preferredcodec": "mp3",
-                        "preferredquality": "192",
+                        "preferredquality": "320",
                     }
                 ],
             }
