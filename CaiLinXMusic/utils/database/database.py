@@ -871,8 +871,6 @@ async def cleanmode_on(chat_id: int):
 
 
 # Audio Video Limit
-
-"""
 from pytgcalls.types import AudioQuality, VideoQuality
 
 
@@ -887,7 +885,7 @@ async def save_video_bitrate(chat_id: int, bitrate: str):
 async def get_aud_bit_name(chat_id: int) -> str:
     mode = audio.get(chat_id)
     if not mode:
-        return "HIGH"
+        return "STUDIO"
     return mode
 
 
@@ -933,7 +931,7 @@ async def get_video_bitrate(chat_id: int) -> str:
     elif str(mode) == "SD_480p":
         return VideoQuality.SD_480p
     elif str(mode) == "SD_360p":
-        return VideoQuality.SD_360p"""
+        return VideoQuality.SD_360p
 
 
 async def is_served_user_clone(user_id: int) -> bool:
