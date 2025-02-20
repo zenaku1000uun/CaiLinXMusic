@@ -11,7 +11,7 @@ from CaiLinXMusic.utils.database import get_client, is_active_chat, is_autoend
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
-        while not await asyncio.sleep(900):
+        while not await asyncio.sleep(28800):
             from CaiLinXMusic.core.userbot import assistants
 
             for num in assistants:
