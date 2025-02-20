@@ -301,8 +301,14 @@ class YouTubeAPI:
                 "format": "bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
+                "ignoreerrors": True,
                 "nocheckcertificate": True,
+                "nocontinue": True,
+                "embedthumbnail": True,
                 "quiet": True,
+                "xattrs": True,
+                "force_keyframes_at_cuts": True,
+                "postprocessor_args": ["-metadata", "title=%(title)s", "-metadata", "artist=%(uploader)s"],
                 "cookiefile" : cookie_txt_file(),
                 "no_warnings": True,
             }
@@ -366,7 +372,7 @@ class YouTubeAPI:
                 "embedthumbnail": True,
                 "no_warnings": True,
                 "xattrs": True,
-                "merge_output_format": "mp3",
+                "postprocessor_args": ["-metadata", "title=%(title)s", "-metadata", "artist=%(uploader)s"],
                 "cookiefile" : cookie_txt_file(),
                 "prefer_ffmpeg": True,
                 "postprocessors": [
