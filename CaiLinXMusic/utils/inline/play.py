@@ -68,7 +68,7 @@ def stream_markup_timer(_, vidid, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text=" ˹ ѕυᴘᴘσʀт ˼ ", url=f"https://t.me/sasukemusicsupportchat"
+                text=" ˹ ѕυᴘᴘσʀт ˼ ", url=f"https://t.me/+ZQTtf-vKQKJiZjE1"
             ),
             InlineKeyboardButton(
                 text=" ˹ υᴘᴅᴧтєѕ ˼ ", url=f"https://t.me/sasukevipmusicbotsupport"
@@ -90,7 +90,7 @@ def stream_markup(_, videoid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text=" ˹ ѕυᴘᴘσʀт ˼ ", url=f"https://t.me/sasukemusicsupportchat"
+                text=" ˹ ѕυᴘᴘσʀт ˼ ", url=f"https://t.me/+ZQTtf-vKQKJiZjE1"
             ),
             InlineKeyboardButton(
                 text=" ˹ υᴘᴅᴧтєѕ ˼ ", url=f"https://t.me/sasukevipmusicbotsupport"
