@@ -25,7 +25,7 @@ async def auto_leave():
                     ]:
                         chat_id = i.chat.id
                         if chat_id not in [
-                            config.LOG_GROUP_ID,
+                            config.LOGGER_ID,
                             -1002459775779,
                             -1002326433754,
                             -1001513130852,
